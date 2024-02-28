@@ -1,0 +1,19 @@
+{
+    "crew":[{
+        "id": 1,
+        "firstName" : "Hannelieke",
+        "lastName" : "Hoogenboom",
+        "picture" : "PICTURE_URL",
+        "text" : "Hier wat tekst over Hannelieke",
+        "rol" : ["regisseur", "speler"]
+    },
+    {
+        "id": 2,
+        "firstName" : "Neomi",
+        "lastName" : "Bes",
+        "picture" : "PICTURE_URL",
+        "text" : "Hier wat tekst over Neomi",
+        "rol" : ["speler"]
+    }
+    ]
+}

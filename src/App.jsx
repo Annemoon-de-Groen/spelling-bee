@@ -6,6 +6,8 @@ import Top from "./Top"
 import { Link, Route, Routes } from 'react-router-dom';
 import './stylesheets/App.css'
 
+// https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.qr-code-generator.com/
+
 function App(){
     return(
         <>
