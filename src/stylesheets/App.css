@@ -1,0 +1,12 @@
+.Everything {
+    background-image: url("https://wallpaperaccess.com/full/3485307.jpg");
+    background-size:cover
+}
+
+.Page {
+    background: #d4d4ff;
+    width: 1000px;
+    height: 800px;
+    padding: 5px;
+    margin: 0px auto
+}

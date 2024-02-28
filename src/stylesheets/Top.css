@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+    background: rgba(0, 0, 255, 0.5);
+    padding: 25px;
+    margin: 0px;
+    color:pink;
+}
+nav{
+    background:#add8e6;
+    text-align: center;
+    padding:25px
+}
+
+.navigationBar a{
+    text-align: center;
+    background: #95d3e8;
+    color:black;
+    padding: 10px 30px;
+    margin: 10px 40px;
+    border: 2px solid black;
+    text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.homePage {
+    background-image: url("https://www.clearspacetheatre.org/wp-content/uploads/2021/01/SPELLINGBEE_logo_300dpi.jpg");
+    background-size: 1000px 500px;
+    width: 1000px;
+    height: 500px;
+    padding: 5px;
+    margin: 0px auto
+}
+
+.homePage h1{
+    background: blue;
+    color:white
+}
+
+.homePage button{
+    color:black;
+    background: lightgreen;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+}
