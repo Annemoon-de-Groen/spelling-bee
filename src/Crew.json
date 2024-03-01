@@ -3,9 +3,10 @@
         "id": 1,
         "firstName" : "Hannelieke",
         "lastName" : "Hoogenboom",
-        "picture" : "PICTURE_URL",
+        "picture" : "src/assets/IMG_0084.JPG",
         "text" : "Hier wat tekst over Hannelieke",
-        "rol" : ["regisseur", "speler"]
+        "rol" : ["regisseur", "acteur"],
+        "speelt" : "Rona"
     },
     {
         "id": 2,
@@ -13,7 +14,45 @@
         "lastName" : "Bes",
         "picture" : "PICTURE_URL",
         "text" : "Hier wat tekst over Neomi",
-        "rol" : ["speler"]
+        "rol" : ["acteur"],
+        "speelt" : "Panch"
+    },
+    {
+        "id": 3,
+        "firstName" : "Quinten",
+        "lastName" : "van Koeverden",
+        "picture" : "src/assets/IMG_0084.JPG",
+        "text" : "Hier wat tekst over Hannelieke",
+        "rol" : ["regisseur", "acteur"],
+        "speelt" : "Chip"
+    },
+    {
+        "id": 4,
+        "firstName" : "Lotte",
+        "lastName" : "Bes",
+        "picture" : "PICTURE_URL",
+        "text" : "Hier wat tekst over Neomi",
+        "rol" : ["acteur"],
+        "speelt" : "Logainne"
+    },
+    {
+        "id": 5,
+        "firstName" : "Hannelieke",
+        "lastName" : "Hoogenboom",
+        "picture" : "src/assets/IMG_0084.JPG",
+        "text" : "Hier wat tekst over Hannelieke",
+        "rol" : ["regisseur", "acteur"],
+        "speelt" : "Rona"
+    },
+    {
+        "id": 6,
+        "firstName" : "Neomi",
+        "lastName" : "Bes",
+        "picture" : "PICTURE_URL",
+        "text" : "Hier wat tekst over Neomi",
+        "rol" : ["acteur"],
+        "speelt" : "Panch"
     }
+    
     ]
 }

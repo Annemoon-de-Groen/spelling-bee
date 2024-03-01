@@ -1,7 +1,17 @@
+import crew from '../Crew.json'
+import SpelerListItem from './SpelerListItem'
+import '../stylesheets/Spelers.css'
+
 function Spelers(){
+    console.log(crew.crew)
     return (
         <div className="spelersPage Page">
-            <h1>Spelers</h1>
+        {
+            crew.crew.map((c, index) => {return (
+                <SpelerListItem speler ={c}/>
+            )})
+        }
+
         </div>
 
     )

@@ -1,0 +1,5 @@
+.datumPrikkerItem {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

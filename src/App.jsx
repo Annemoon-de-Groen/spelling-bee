@@ -5,6 +5,8 @@ import Spellen from "./Pages/Spellen";
 import Top from "./Top"
 import { Link, Route, Routes } from 'react-router-dom';
 import './stylesheets/App.css'
+import Datumprikker from "./Pages/Datumprikker";
+import Tickets from "./Pages/Tickets";
 
 // https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.qr-code-generator.com/
 
@@ -18,6 +20,8 @@ function App(){
             <Route path="/info" element={<Info/>}/>
             <Route path="/spelers" element={<Spelers/>}/>
             <Route path="/spellen" element={<Spellen/>}/>
+            <Route path="/date" element={<Datumprikker/>}/>
+            <Route path="/tickets/:date" element={<Tickets/>}/>
 
             <Route path="*" element={<h1>Not found</h1>}/>
         </Routes>

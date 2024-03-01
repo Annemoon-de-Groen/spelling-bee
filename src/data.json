@@ -1,0 +1,87 @@
+{
+  "datum1": {
+    "date": "30 mei",
+    "time": "18.00 - 19.00",
+    "aanmeldingen": [
+      {
+        "firstName": "Annemoon",
+        "lastName": "de Groen",
+        "email": "annemoon@degroen.nl",
+        "tickets": 2
+      },
+      {
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "tickets": 0
+      },
+      {
+        "firstName": "Naam",
+        "lastName": "Achternaam",
+        "email": "mail@example.nl",
+        "tickets": 2
+      },
+      {
+        "firstName": "Naam",
+        "lastName": "achternaam",
+        "email": "sds@ss",
+        "tickets": 4
+      },
+      {
+        "firstName": "s",
+        "lastName": "d",
+        "email": "a@dfs",
+        "tickets": 1
+      },
+      {
+        "firstName": "Moon",
+        "lastName": "de Groen",
+        "email": "annemoon2003@gmail.com",
+        "tickets": 1
+      },
+      {
+        "firstName": "Annemoon",
+        "lastName": "desfjk;",
+        "email": "annemoon@fsad",
+        "tickets": 1
+      },
+      {
+        "firstName": "Naam",
+        "lastName": "Achternaam",
+        "email": "putnam.county.spelling.bee.musical@gmail.com",
+        "tickets": 1
+      },
+      {
+        "firstName": "Koop",
+        "lastName": "Kaartje",
+        "email": "putnam.county.spelling.bee.musical@gmail.com",
+        "tickets": 1
+      },
+      {
+        "firstName": "s",
+        "lastName": "s",
+        "email": "sd@d",
+        "tickets": 1
+      }
+    ],
+    "capacity": 14
+  },
+  "datum2": {
+    "date": "31 mei",
+    "time": "18.00 - 19.00",
+    "aanmeldingen": [],
+    "capacity": 0
+  },
+  "datum3": {
+    "date": "1 juni",
+    "time": "18.00 - 19.00",
+    "aanmeldingen": [],
+    "capacity": 0
+  },
+  "datum4": {
+    "date": "1 juni",
+    "time": "20.00 - 21.00",
+    "aanmeldingen": [],
+    "capacity": 0
+  }
+}
