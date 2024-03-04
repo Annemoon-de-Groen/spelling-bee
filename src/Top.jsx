@@ -1,11 +1,10 @@
 import { useNavigate } from 'react-router-dom'
 import './stylesheets/Top.css'
 
+function Top () {
+  const navigate = useNavigate
 
-function Top(){
-    const navigate = useNavigate
-
-    return(
+  return (
         <>
         <h1 className="title">The 25th Annual Putnam County Spelling Bee</h1>
         <nav className='navigationBar'>
@@ -15,7 +14,7 @@ function Top(){
             <a href="/spellen">Spellen</a>
         </nav>
         </>
-    )
+  )
 }
 
 export default Top

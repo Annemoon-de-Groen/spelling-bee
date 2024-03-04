@@ -1,10 +1,11 @@
 .Everything {
     background-image: url("https://wallpaperaccess.com/full/3485307.jpg");
-    background-size:cover
+    background-size:cover;
+    font-family:cursive;
 }
 
 .Page {
-    background: #d4d4ff;
+    background: #FDFDFD;
     width: 1000px;
     height: 800px;
     padding: 5px;

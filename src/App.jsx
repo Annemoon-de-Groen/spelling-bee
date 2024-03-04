@@ -1,17 +1,18 @@
-import Home from "./Pages/Home"
-import Info from "./Pages/Info";
-import Spelers from "./Pages/Spelers";
-import Spellen from "./Pages/Spellen";
-import Top from "./Top"
-import { Link, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home'
+import Info from './Pages/Info'
+import Spelers from './Pages/Spelers'
+import Spellen from './Pages/Spellen'
+import Top from './Top'
+import { Link, Route, Routes } from 'react-router-dom'
 import './stylesheets/App.css'
-import Datumprikker from "./Pages/Datumprikker";
-import Tickets from "./Pages/Tickets";
+import Datumprikker from './Pages/Datumprikker'
+import Tickets from './Pages/Tickets'
+import Submitted from './Pages/Submitted'
 
 // https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.qr-code-generator.com/
 
-function App(){
-    return(
+function App () {
+  return (
         <>
         <div className="Everything">
         <Top/>
@@ -22,12 +23,13 @@ function App(){
             <Route path="/spellen" element={<Spellen/>}/>
             <Route path="/date" element={<Datumprikker/>}/>
             <Route path="/tickets/:date" element={<Tickets/>}/>
+            <Route path="/submitted" element={<Submitted/>}/>
 
             <Route path="*" element={<h1>Not found</h1>}/>
         </Routes>
         </div>
         </>
-    )
+  )
 }
 
 export default App

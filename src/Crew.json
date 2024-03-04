@@ -5,7 +5,7 @@
         "lastName" : "Hoogenboom",
         "picture" : "src/assets/IMG_0084.JPG",
         "text" : "Hier wat tekst over Hannelieke",
-        "rol" : ["regisseur", "acteur"],
+        "rol" : ["regisseur", "acteur", "vertaling"],
         "speelt" : "Rona"
     },
     {
@@ -21,37 +21,37 @@
         "id": 3,
         "firstName" : "Quinten",
         "lastName" : "van Koeverden",
-        "picture" : "src/assets/IMG_0084.JPG",
-        "text" : "Hier wat tekst over Hannelieke",
-        "rol" : ["regisseur", "acteur"],
+        "picture" : "PICTURE_URL",
+        "text" : "Hier wat tekst over Quinten",
+        "rol" : [ "acteur"],
         "speelt" : "Chip"
     },
     {
         "id": 4,
         "firstName" : "Lotte",
-        "lastName" : "Bes",
+        "lastName" : "Hoek",
         "picture" : "PICTURE_URL",
-        "text" : "Hier wat tekst over Neomi",
+        "text" : "Hier wat tekst over Lott",
         "rol" : ["acteur"],
         "speelt" : "Logainne"
     },
     {
         "id": 5,
-        "firstName" : "Hannelieke",
-        "lastName" : "Hoogenboom",
-        "picture" : "src/assets/IMG_0084.JPG",
-        "text" : "Hier wat tekst over Hannelieke",
-        "rol" : ["regisseur", "acteur"],
-        "speelt" : "Rona"
+        "firstName" : "Lara",
+        "lastName" : "[Achternaam]",
+        "picture" : "PICTURE_URL",
+        "text" : "Hier wat tekst over Lara",
+        "rol" : ["acteur"],
+        "speelt" : "Marcy"
     },
     {
         "id": 6,
-        "firstName" : "Neomi",
-        "lastName" : "Bes",
+        "firstName" : "Morris",
+        "lastName" : "Mooijaart",
         "picture" : "PICTURE_URL",
-        "text" : "Hier wat tekst over Neomi",
-        "rol" : ["acteur"],
-        "speelt" : "Panch"
+        "text" : "Hier wat tekst over Morris",
+        "rol" : ["acteur", "regisseur"],
+        "speelt" : "Leaf"
     }
     
     ]
