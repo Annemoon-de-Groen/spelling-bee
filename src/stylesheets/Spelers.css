@@ -1,4 +1,48 @@
-.spelersPage{
+.spelersPage {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: auto auto auto
+}
+
+.spelerPicture {
+    width: 150px;
+    height: 200px;
+
+}
+
+.Speler {
+    background: #FDFDFD;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px -50px;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: small;
+    font-weight: 300
+}
+
+.Speler ul {
+    list-style-type: none;
+}
+
+.spelerName {
+    font-size: 20px;
+}
+
+.spelerPopup {
+    position: fixed;
+    border: #115DAB 1px solid;
+    left: calc(50vw - 250px);
+    z-index: 1;
+    background: white;
+    margin: 0px auto;
+    width: 500px;
+    text-align: center;
+
 }

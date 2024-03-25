@@ -1,22 +1,16 @@
-import '../stylesheets/SpelerListItem.css'
 
-function SpelerListItem ({ speler }) {
+function SpelerListItem({ speler, setSelectedSpeler }) {
   return (
-        <div className="Speler">
-            <h1>{speler.firstName} {speler.lastName}</h1>
-            <ul>
-            {
-                speler.rol.map((rol, index) => {
-                  return (
-                    <li key={index}>{rol}</li>
-                  )
-                })
-            }
-            </ul>
-            <img className="spelerPicture" src={speler.picture} alt={`Image of ${speler.firstName}`}/>
-            <h2>{speler.text}</h2>
-            {speler.speelt && <h2>Speelt: {speler.speelt}</h2>}
-        </div>
+    <div className="Speler">
+      <img className="spelerPicture" src={speler.picture} alt={`Image of ${speler.firstName}`} />
+      <div>
+        <h1 className="spelerName">{speler.firstName} {speler.lastName}</h1>
+        {speler.speelt && <h2>als: {speler.speelt}</h2>}
+        <button onClick={() => setSelectedSpeler(speler)}>Over {speler.firstName}</button>
+      </div>
+
+
+    </div>
   )
 }
 
