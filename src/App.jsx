@@ -3,7 +3,7 @@ import Info from './Pages/Info'
 import Spelers from './Pages/Spelers'
 import Spellen from './Pages/Spellen'
 import Top from './Top'
-import { Link, Route, Routes } from 'react-router-dom'
+import { HashRouter, Link, Route, Routes } from 'react-router-dom'
 import './stylesheets/App.css'
 import Datumprikker from './Pages/Datumprikker'
 import Tickets from './Pages/Tickets'
@@ -11,24 +11,25 @@ import Submitted from './Pages/Submitted'
 
 // https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.qr-code-generator.com/
 
-function App () {
+function App() {
   return (
-        <>
-        <div className="Everything">
-        <Top/>
+    <>
+      <div className="Everything">
+        <Top />
         <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/info" element={<Info/>}/>
-            <Route path="/spelers" element={<Spelers/>}/>
-            <Route path="/spellen" element={<Spellen/>}/>
-            <Route path="/date" element={<Datumprikker/>}/>
-            <Route path="/tickets/:date" element={<Tickets/>}/>
-            <Route path="/submitted" element={<Submitted/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/spelers" element={<Spelers />} />
+          <Route path="/spellen" element={<Spellen />} />
+          <Route path="/date" element={<Datumprikker />} />
+          <Route path="/tickets/:date" element={<Tickets />} />
+          <Route path="/submitted" element={<Submitted />} />
 
-            <Route path="*" element={<h1>Not found</h1>}/>
+          <Route path="*" element={<h1>Not found</h1>} />
         </Routes>
-        </div>
-        </>
+
+      </div>
+    </>
   )
 }
 
