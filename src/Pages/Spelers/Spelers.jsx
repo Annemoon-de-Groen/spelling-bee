@@ -1,6 +1,6 @@
-import crew from '../Crew.json'
+import crew from '../../Crew.json'
 import SpelerListItem from './SpelerListItem'
-import '../stylesheets/Spelers.css'
+import '../../stylesheets/Spelers.css'
 import { useState } from 'react'
 
 function Spelers() {

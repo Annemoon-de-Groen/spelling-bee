@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Update } from '../api'
+import { Update } from '../../api'
 import { json, useNavigate } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
@@ -11,7 +11,7 @@ const initialForm = {
   email: ''
 }
 
-function RegisterForm ({ date, tickets }) {
+function RegisterForm({ date, tickets }) {
   const [formData, setFormData] = useState({ ...initialForm })
   //  const mollieClient = createMollieClient({apiKey: 'test_tMgvzc3AHne9QymEbmpk2B9DjgJU6c'})
 
@@ -53,26 +53,26 @@ function RegisterForm ({ date, tickets }) {
   })
 
   return (
-        <form onSubmit={handleSubmit}>
-            <label>Voornaam: <input
-            onChange={handleChange}
-            name="firstName"
-            value={formData.firstName}
-            required/></label>
+    <form onSubmit={handleSubmit}>
+      <label>Voornaam: <input
+        onChange={handleChange}
+        name="firstName"
+        value={formData.firstName}
+        required /></label>
 
-            <label>Achternaam: <input
-            onChange={handleChange}
-            name="lastName"
-            value={formData.lastName}
-            required/></label>
+      <label>Achternaam: <input
+        onChange={handleChange}
+        name="lastName"
+        value={formData.lastName}
+        required /></label>
 
-            <label>Email: <input
-            type="email"
-            onChange={handleChange}
-            name="email"
-            value={formData.email}/></label>
-            <input type="submit"/>
-        </form>
+      <label>Email: <input
+        type="email"
+        onChange={handleChange}
+        name="email"
+        value={formData.email} /></label>
+      <input type="submit" />
+    </form>
   )
 }
 

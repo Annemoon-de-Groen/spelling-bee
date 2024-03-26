@@ -1,7 +1,7 @@
-import data from '../data.json'
+import data from '../../data.json'
 import DatumPrikkerItem from './DatumprikkerItem'
 
-function Datumprikker () {
+function Datumprikker() {
   const allData = () => {
     const result = []
     for (const key in data) {
@@ -11,9 +11,9 @@ function Datumprikker () {
   }
 
   return (
-        <div className="Page">
-            {allData().map((d) => { return (<DatumPrikkerItem datum={data[d]} datumKey={d}/>) })}
-        </div>
+    <div className="Page">
+      {allData().map((d) => { return (<DatumPrikkerItem datum={data[d]} datumKey={d} />) })}
+    </div>
   )
 }
 
