@@ -17,7 +17,7 @@ function DatumPrikkerItem({ datum }) {
   return (
     <div className="datumPrikkerItem">
       <h1>{date.toLocaleDateString('nl-Nl', { dateStyle: "full" })}</h1>
-      <h2>{date.toLocaleTimeString()}</h2>
+      <h2>{date.toLocaleTimeString()}</h2
       <button onClick={handleOnClick}>{isAdmin ? 'Bekijk reserveringen' : 'Koop kaartje'}</button>
     </div>
   )

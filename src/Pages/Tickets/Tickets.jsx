@@ -1,9 +1,84 @@
+import { useEffect, useState } from "react"
+import { GetPlayById } from "../../BackendConnections/PlayAPI"
+import { FormatDate } from "../../Helper/FormatDate"
+import { useNavigate } from "react-router-dom"
+import '../../stylesheets/Tickets.css'
+
+
+const dateId = localStorage.getItem('datum')
+const aantal = localStorage.getItem('aantal')
+const initialForm = {
+  firstName: '',
+  lastName: '',
+  email: ''
+}
+
+
+function Tickets() {
+  const navigate = useNavigate()
+  const [formData, setFormData] = useState({ ...initialForm })
+  const [datum, setDatum] = useState(null)
+  useEffect(() => {
+    GetPlayById(dateId).then((res) => setDatum(res))
+  }, [dateId])
+
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    console.log(formData)
+    setFormData({ ...initialForm })
+    location.href = 'https://tikkie.me/pay/g03bkn7mvbfmjttl2jub'
+  }
+
+  return (
+    <div className="Page TicketPage">
+      <form className="registerForm">
+        <p>Gegevens</p>
+        <label>Voornaam: <input
+          onChange={handleChange}
+          name="firstName"
+          value={formData.firstName}
+          required /></label>
+        <br />
+        <label>Achternaam: <input
+          onChange={handleChange}
+          name="lastName"
+          value={formData.lastName}
+          required /></label>
+        <br />
+        <label>Email: <input
+          type="email"
+          onChange={handleChange}
+          name="email"
+          value={formData.email} /></label>
+        <br />
+        <button onClick={handleSubmit}>Naar betalen</button>
+
+      </form>
+      <div className="overview">
+
+        <p>        Aantal: {aantal}</p>
+
+        {datum && <p>Datum: {FormatDate(datum.date)} </p>}
+        <p>Prijs: €{aantal * 5}</p>
+        <button onClick={() => navigate('/date')}>Edit</button>
+      </div>
+    </div>
+
+  )
+}
+
+
+/*
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import data from '../../data.json'
 import RegisterForm from './RegisterForm'
 import TicketAmount from './TicketAmount'
-import '../../stylesheets/Tickets.css'
 import { GetPlayById } from '../../BackendConnections/PlayAPI'
 
 function Tickets() {
@@ -44,5 +119,7 @@ function Tickets() {
     </div>
   )
 }
-
+*/
 export default Tickets
+
+

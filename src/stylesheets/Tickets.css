@@ -13,9 +13,9 @@
     position: relative;
     top: -10px
 }
-.submitButton {
 
-}
+.submitButton {}
+
 .ChooseTickets {
     margin: 0px auto;
     text-align: center;
@@ -25,6 +25,28 @@
     text-align: center;
     color: #115DAB;
 }
+
 h2.date {
     font-size: small;
+}
+
+.TicketPage {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.overview {
+    background-color: lightgray;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 10px;
+    height: fit-content;
+    width: 300px;
+}
+
+.registerForm {
+    margin: 30px auto;
+
+    text-align-last: justify;
 }

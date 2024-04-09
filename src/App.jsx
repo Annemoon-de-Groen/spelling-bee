@@ -29,6 +29,8 @@ function App() {
             <Route path="/spelers" element={<Spelers />} />
             <Route path="/spellen" element={<Spellen />} />
             <Route path="/date" element={<Datumprikker />} />
+            <Route path="/tickets" element={<Tickets />} />
+
             <Route path="/tickets/:dateId" element={<Tickets />} />
             <Route path="/submitted" element={<Submitted />} />
             <Route path="/reserveringen/:id" element={<Reserveringen />} />

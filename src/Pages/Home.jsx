@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import '../stylesheets/Home.css'
 import { useEffect, useState } from 'react';
 import { GetPlay } from '../BackendConnections/PlayAPI';
+import { FormatDate } from '../Helper/FormatDate';
 
 function Home() {
   const navigate = useNavigate()
@@ -37,9 +38,8 @@ function Home() {
       <div>
         <p> Speelt op</p>
         {allData.map((datum) => {
-          const date = new Date(datum.date)
           return (
-            <p>{date.toLocaleDateString('nl-Nl', { dateStyle: "full" })} om {date.toTimeString().slice(0, 5)}</p>
+            <p>{FormatDate(datum.date)}</p>
           )
         })}
       </div>
