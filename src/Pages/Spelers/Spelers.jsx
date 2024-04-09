@@ -1,22 +1,25 @@
-import crew from '../../Crew.json'
 import SpelerListItem from './SpelerListItem'
 import '../../stylesheets/Spelers.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { GetPlayers } from '../../BackendConnections/PlayerAPI'
 
 function Spelers() {
   const [selectedSpeler, setSelectedSpeler] = useState(null)
-  console.log(crew.crew)
+  const [players, setPlayers] = useState([])
+  useEffect(() => {
+    GetPlayers().then((response) => setPlayers(response))
+  }, [])
   return (
     <>
       {selectedSpeler &&
         <div className='spelerPopup'>
-          <h1>INFORMATIE OVER {selectedSpeler.firstName}</h1>
+          <h3>{selectedSpeler.firstName} {selectedSpeler.lastName}</h3>
+          <p>{selectedSpeler.bio}</p>
           <button onClick={() => setSelectedSpeler(null)}>OK</button>
         </div>}
-
       <div className="spelersPage Page">
         {
-          crew.crew.map((c, index) => {
+          players.map((c, index) => {
             return (
               <SpelerListItem speler={c} setSelectedSpeler={setSelectedSpeler} />
             )

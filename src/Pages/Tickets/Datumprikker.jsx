@@ -1,8 +1,16 @@
+import { useEffect, useState } from 'react'
 import data from '../../data.json'
 import DatumPrikkerItem from './DatumprikkerItem'
+import { GetPlay } from '../../BackendConnections/PlayAPI';
 
 function Datumprikker() {
-  const allData = () => {
+  const [allData, setAllData] = useState([]);
+
+  useEffect(() => {
+    GetPlay().then((response) => setAllData(response))
+  }, [])
+
+  const alData = () => {
     const result = []
     for (const key in data) {
       result.push(key)
@@ -12,7 +20,7 @@ function Datumprikker() {
 
   return (
     <div className="Page">
-      {allData().map((d) => { return (<DatumPrikkerItem datum={data[d]} datumKey={d} />) })}
+      {allData.map((d) => { return (<DatumPrikkerItem datum={d} />) })}
     </div>
   )
 }

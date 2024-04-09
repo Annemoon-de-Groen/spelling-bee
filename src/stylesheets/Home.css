@@ -4,20 +4,46 @@
     width: 1000px;
     height: 500px;
     padding: 5px;
-    margin: 0px auto
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 350px;
 }
 
-.homePage h1{
+.homePage h1 {}
 
-}
 
-.homePage button{
-    color:black;
+
+.homePage button {
+    color: black;
     background: lightgreen;
     width: 200px;
     height: 80px;
     display: inline-block;
     font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#frontPageImage {
+    width: 450px;
+    padding: 25px;
+}
+
+#mapsLocation {
+    background-color: lightblue;
+    text-emphasis: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+#mapsBorder {}
+
+#mapsLogo {
+    width: 25px;
+    position: relative;
+    top: 10px;
+
 }

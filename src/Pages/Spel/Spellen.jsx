@@ -1,11 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import audio from '../../data/audio'
 import Question from './Question'
+import '../../stylesheets/Spel.css'
+import { AdminContext } from '../../App'
+import QuestionOverview from './QuestionOverview'
 
 function Spellen() {
   const [currentAudio, setCurrentAudio] = useState(null)
   const [randomOrder, setRandomOrder] = useState([])
   const [index, setIndex] = useState(0)
+  const { isAdmin } = useContext(AdminContext)
 
   useEffect(() => {
     const random = Shuffle()
@@ -23,6 +27,11 @@ function Spellen() {
     //  setCurrentAudio(audio[trackNumber])
   }
 
+  if (isAdmin) {
+    console.log("Random order:", randomOrder)
+    return (<QuestionOverview></QuestionOverview>)
+  }
+
   if (!currentAudio) {
     return (
       <div className="spellenPage Page">
@@ -35,7 +44,7 @@ function Spellen() {
   return (
     <div className="spellenPage Page">
       <h1 onClick={() => changeAudio()}>Next</h1>
-      <Question word={currentAudio} />
+      <Question word={currentAudio} nextQuestion={changeAudio} />
       <p>{currentAudio.woord}</p>
       <audio src={currentAudio.audio} controls></audio>
     </div>

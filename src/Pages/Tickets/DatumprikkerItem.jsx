@@ -1,16 +1,24 @@
 import { useNavigate } from 'react-router-dom'
 import '../../stylesheets/Datumprikker.css'
+import { useContext } from 'react'
+import { AdminContext } from '../../App'
 
-function DatumPrikkerItem({ datum, datumKey }) {
+function DatumPrikkerItem({ datum }) {
+  const { isAdmin } = useContext(AdminContext)
+
   const navigate = useNavigate()
   const handleOnClick = (event) => {
-    navigate(`/tickets/${datumKey}`)
+    isAdmin ?
+      navigate(`/reserveringen/${datum.id}`) :
+      navigate(`/tickets/${datum.id}`)
   }
+
+  const date = new Date(datum.date)
   return (
     <div className="datumPrikkerItem">
-      <h1>{datum.date}</h1>
-      <h2>{datum.time}</h2>
-      <button onClick={handleOnClick}>Koop kaartje</button>
+      <h1>{date.toLocaleDateString('nl-Nl', { dateStyle: "full" })}</h1>
+      <h2>{date.toLocaleTimeString()}</h2>
+      <button onClick={handleOnClick}>{isAdmin ? 'Bekijk reserveringen' : 'Koop kaartje'}</button>
     </div>
   )
 }

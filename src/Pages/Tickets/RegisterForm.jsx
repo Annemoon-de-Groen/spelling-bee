@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Update } from '../../api'
-import { json, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
+import { PostTicket } from '../../BackendConnections/TicketAPI'
 
 const developperMode = true
 
@@ -24,7 +24,9 @@ function RegisterForm({ date, tickets }) {
   const handleSubmit = (event) => {
     event.preventDefault()
     setFormData(initialForm)
-
+    console.log("DATE", date)
+    PostTicket(date.id, formData.firstName, formData.lastName, formData.email, tickets, false)
+    /*
     fetch(`http://localhost:4000/${date}`, {}).then((response) => {
       return response.json()
     }).then((jsonData) => {
@@ -35,17 +37,29 @@ function RegisterForm({ date, tickets }) {
       }
       Update(date, obj)
     })
+    */
+    const dateTime = new Date(date.date)
+
+
     navigate('/submitted')
 
     if (!developperMode) {
-      emailjs.send('service_qm5zcoh', 'template_t60l20l', { to_name: formData.firstName, to_email: formData.email }).then(
-        (response) => {
-          console.log('Succes!', response.status, response.text)
-        },
-        (error) => {
-          console.log('Error', error)
-        }
-      )
+      emailjs.send('service_qm5zcoh', 'template_t60l20l',
+        {
+          to_name: formData.firstName,
+          to_email: formData.email,
+          amount: tickets,
+          date: dateTime.toDateString(),
+          time: dateTime.toLocaleTimeString(),
+          tikkie_link: "https://tikkie.me/pay/r0l1p1uvq33r8v61ra1f"
+        }).then(
+          (response) => {
+            console.log('Succes!', response.status, response.text)
+          },
+          (error) => {
+            console.log('Error', error)
+          }
+        )
     }
   }
   emailjs.init({

@@ -1,9 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 import './stylesheets/Top.css'
+import { useContext } from 'react'
+import { AdminContext } from './App'
 
 function Top() {
 
   const navigate = useNavigate()
+  const { isAdmin, setIsAdmin } = useContext(AdminContext)
 
   return (
     <>
@@ -14,6 +17,7 @@ function Top() {
         <a onClick={() => navigate('/spelers')}>Spelers</a>
         <a onClick={() => navigate('/spellen')}>Spellen</a>
       </nav>
+      <button onClick={() => setIsAdmin(!isAdmin)}>{isAdmin ? "Admin" : "User"}</button>
     </>
   )
 }

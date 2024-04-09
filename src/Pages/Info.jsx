@@ -1,8 +1,8 @@
-function Info () {
+function Info() {
   return (
-        <div className="infoPage Page">
-            <h1>Info</h1>
-        </div>
+    <div className="infoPage Page">
+      <h1>Info</h1>
+    </div>
 
   )
 }
