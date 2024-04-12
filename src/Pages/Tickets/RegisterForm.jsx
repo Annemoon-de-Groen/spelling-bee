@@ -12,7 +12,6 @@ const initialForm = {
 }
 
 function RegisterForm({ date, tickets }) {
-  const [formData, setFormData] = useState({ ...initialForm })
   //  const mollieClient = createMollieClient({apiKey: 'test_tMgvzc3AHne9QymEbmpk2B9DjgJU6c'})
 
   const navigate = useNavigate()

@@ -3,10 +3,10 @@ import { GetPlayById } from "../../BackendConnections/PlayAPI"
 import { FormatDate } from "../../Helper/FormatDate"
 import { useNavigate } from "react-router-dom"
 import '../../stylesheets/Tickets.css'
+import { PostTicket } from "../../BackendConnections/TicketAPI"
 
 
 const dateId = localStorage.getItem('datum')
-const aantal = localStorage.getItem('aantal')
 const initialForm = {
   firstName: '',
   lastName: '',
@@ -31,6 +31,7 @@ function Tickets() {
     event.preventDefault()
     console.log(formData)
     setFormData({ ...initialForm })
+    PostTicket(datum.id, formData.firstName, formData.lastName, formData.email, localStorage.getItem('aantal'), true)
     location.href = 'https://tikkie.me/pay/g03bkn7mvbfmjttl2jub'
   }
 
@@ -61,10 +62,10 @@ function Tickets() {
       </form>
       <div className="overview">
 
-        <p>        Aantal: {aantal}</p>
+        <p>        Aantal: {localStorage.getItem('aantal')}</p>
 
         {datum && <p>Datum: {FormatDate(datum.date)} </p>}
-        <p>Prijs: €{aantal * 5}</p>
+        <p>Prijs: €{localStorage.getItem('aantal') * 5}</p>
         <button onClick={() => navigate('/date')}>Edit</button>
       </div>
     </div>

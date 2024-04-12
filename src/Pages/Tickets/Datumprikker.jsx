@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import { GetPlay } from '../../BackendConnections/PlayAPI';
 import { useNavigate } from 'react-router-dom';
+import { FormatDate } from '../../Helper/FormatDate';
 
 const aantallen = [1, 2, 3, 4, 5, 6, 7, 8]
 const initialForm = {
   datum: 0,
-  aantal: 0
+  aantal: 1
 }
 
 function Datumprikker() {
@@ -16,6 +17,12 @@ function Datumprikker() {
 
   useEffect(() => {
     GetPlay().then((response) => setAllData(response))
+    if (localStorage.getItem('datum'))
+      formData['datum'] = localStorage.getItem('datum');
+    if (localStorage.getItem('aantal'))
+      formData['aantal'] = localStorage.getItem('aantal');
+    setFormData({ ...formData })
+
   }, [])
 
   const handleChange = (event) => {
@@ -34,12 +41,11 @@ function Datumprikker() {
       <p>Koop kaartje</p>
       <div>
 
-        <select name='datum' onChange={handleChange}>
-          <option value='0'>Selecteer een voorstelling</option>
+        <select name='datum' onChange={handleChange} defaultValue={formData.datum} required>
+          <option value='0' disabled>Selecteer een voorstelling</option>
           {allData.map((datum) => {
-            const date = new Date(datum.date)
             return (
-              <option value={datum.id}>{date.toLocaleDateString('nl-Nl', { dateStyle: "full" })} om {date.toTimeString().slice(0, 5)}</option>
+              <option value={datum.id} selected={datum.id == formData['datum']}>{FormatDate(datum.date)}</option>
             )
 
           })}
@@ -50,13 +56,13 @@ function Datumprikker() {
         <select name='aantal' onChange={handleChange}>
           {aantallen.map((getal) => {
             return (
-              <option>{getal}</option>
+              <option selected={getal == formData['aantal']}>{getal}</option>
             )
           })}
 
         </select>
       </div>
-      <button onClick={handleSubmit}>Continue</button>
+      <button onClick={handleSubmit} disabled={formData['datum'] == 0}>Volgende</button>
 
 
     </div>

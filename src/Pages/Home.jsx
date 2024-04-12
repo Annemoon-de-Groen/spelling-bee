@@ -12,6 +12,8 @@ function Home() {
     GetPlay().then((response) => setAllData(response))
   }, [])
   const handleBuyTicket = (event) => {
+    localStorage.removeItem('datum')
+    localStorage.removeItem('aantal')
     navigate('/date')
   }
 
