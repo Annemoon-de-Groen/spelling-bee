@@ -5,7 +5,7 @@ function SpelerListItem({ speler, setSelectedSpeler }) {
   const { isAdmin } = useContext(AdminContext)
   return (
     <div className="Speler">
-      <img className="spelerPicture" src={speler.picture} alt={`Image of ${speler.firstName}`} />
+      <img className="spelerPicture" src={`https://github.com/Annemoon-de-Groen/the-25th-annual-putnam-county-spelling-bee/blob/main/src/assets/images/${speler.firstName}.JPG?raw=true`} alt={`Image of ${speler.firstName}`} />
       <div>
         <h1 className="spelerName">{speler.firstName} {speler.lastName}</h1>
         {speler.rol && <h2>als: {speler.rol}</h2>}
