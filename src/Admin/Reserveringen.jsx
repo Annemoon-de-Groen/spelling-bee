@@ -7,7 +7,7 @@ function Reserveringen() {
     const [tickets, setTickets] = useState([])
     useEffect(() => {
         GetTicketsByPlay(id).then(res => setTickets(res))
-    }, [])
+    }, [id])
 
     const pay = (ticket) => {
         PayTicket(ticket.id)

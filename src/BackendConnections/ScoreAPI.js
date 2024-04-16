@@ -1,4 +1,4 @@
-const URL = 'http://localhost:5059'
+const URL = 'https://localhost:32788'
 
 function GetAllScores() {
     return fetch(`${URL}/score`, {}).then((response) => { return response.json(); })

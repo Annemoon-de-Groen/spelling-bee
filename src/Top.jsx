@@ -10,7 +10,7 @@ function Top() {
 
   return (
     <>
-      <h1 className="title">The 25th Annual Putnam County Spelling Bee</h1>
+      <h1 className="title">De 25ste Jaarlijkse Putnam County Spelwedstrijd</h1>
       <nav className='navigationBar'>
         <a onClick={() => navigate('/')}>Home</a>
         <a onClick={() => navigate('/info')} >Info</a>

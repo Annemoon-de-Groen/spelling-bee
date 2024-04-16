@@ -29,7 +29,7 @@ function Tickets() {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log(formData)
+    console.log(formData, datum.id)
     setFormData({ ...initialForm })
     PostTicket(datum.id, formData.firstName, formData.lastName, formData.email, localStorage.getItem('aantal'), true)
     location.href = 'https://tikkie.me/pay/g03bkn7mvbfmjttl2jub'

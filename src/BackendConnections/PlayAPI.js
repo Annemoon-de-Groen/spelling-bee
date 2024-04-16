@@ -1,4 +1,4 @@
-const URL = 'http://localhost:5059'
+const URL = 'https://localhost:32788'
 
 function GetPlay() {
     return fetch(`${URL}/play`, {}).then((response) => { return response.json(); })
