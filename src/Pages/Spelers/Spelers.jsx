@@ -7,7 +7,8 @@ function Spelers() {
   const [selectedSpeler, setSelectedSpeler] = useState(null)
   const [players, setPlayers] = useState([])
   useEffect(() => {
-    GetPlayers().then((response) => setPlayers(response))
+    //GetPlayers().then((response) => setPlayers(response))
+    setPlayers(GetPlayers())
   }, [])
   return (
     <>

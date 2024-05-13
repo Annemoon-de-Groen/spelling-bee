@@ -22,7 +22,7 @@ function Home() {
       <div className='text'>
         <p>De 25 Annual Putnam County Spelling Bee is een musical over een spelwedstrijd waar verschillende kinderen aan meedoen.
           Het is een humoristische voorstelling die nu vertaald is naar het nederlands en deze zomer zal worden opgevoerd in de CultuurCampus.</p>
-        <button onClick={handleBuyTicket}>Koop kaartje</button>
+        <a href='https://www.ticketkantoor.nl/shop/spelwedstrijd'><button>Koop kaartje</button></a>
       </div>
       <div>
         <img id='frontPageImage' src="https://media.blogto.com/events/2015/05/28/764977f9-b816-45aa-905b-e1c0e5a5301b.jpg?w=2048&cmd=resize&quality=70"></img>

@@ -4,103 +4,95 @@
             "id": 1,
             "firstName": "Hannelieke",
             "lastName": "Hoogenboom",
-            "picture": "src/assets/IMG_0084.JPG",
-            "text": "Hier wat tekst over Hannelieke",
-            "rol": [
-                "regisseur",
+            "bio": "Hier wat tekst over Hannelieke",
+            "rol": "Rona Lisa Peretti",
+            "functie": [
                 "acteur",
-                "vertaling"
-            ],
-            "speelt": "Rona"
+                "regisseur",
+                "vertaler"
+            ]
         },
         {
             "id": 2,
             "firstName": "Neomi",
             "lastName": "Bes",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Neomi",
-            "rol": [
+            "bio": "Hier wat tekst over Neomi",
+            "functie": [
                 "acteur"
             ],
-            "speelt": "Panch"
+            "rol": "Panch"
+        },
+        {
+            "id": 9,
+            "firstName": "Anne-Sophie",
+            "lastName": "Ten Holder",
+            "bio": "Hier wat tekst over Anne-Sophie",
+            "functie": [
+                "acteur",
+                "choreograaf"
+            ],
+            "speelt": "Midge Mahoney"
         },
         {
             "id": 3,
             "firstName": "Quinten",
             "lastName": "van Koeverden",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Quinten",
-            "rol": [
+            "bio": "Hier wat tekst over Quinten",
+            "functie": [
                 "acteur"
             ],
-            "speelt": "Chip"
+            "rol": "Chip Tolentino"
         },
         {
             "id": 4,
             "firstName": "Lotte",
             "lastName": "Hoek",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Lott",
-            "rol": [
+            "bio": "Hier wat tekst over Lotte",
+            "functie": [
                 "acteur"
             ],
-            "speelt": "Logainne"
+            "rol": "Logainne SchwartzandGrubenierre"
         },
         {
             "id": 5,
             "firstName": "Lara",
             "lastName": "",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Lara",
-            "rol": [
+            "bio": "Hier wat tekst over Lara",
+            "functie": [
                 "acteur"
             ],
-            "speelt": "Marcy"
+            "rol": "Marcy Park"
         },
         {
             "id": 6,
             "firstName": "Morris",
             "lastName": "Mooijaart",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Morris",
-            "rol": [
+            "bio": "Hier wat tekst over Morris",
+            "functie": [
                 "acteur",
                 "regisseur"
             ],
-            "speelt": "Leaf"
+            "rol": "Leaf Coneybear"
         },
         {
             "id": 7,
             "firstName": "Diede",
-            "lastName": "",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Diede",
-            "rol": [
+            "lastName": "Kijftenbelt",
+            "bio": "Hier wat tekst over Diede",
+            "functie": [
                 "acteur"
             ],
-            "speelt": "Olive Ostrovsky"
+            "rol": "Olive Ostrovsky"
         },
         {
             "id": 8,
             "firstName": "Liza",
             "lastName": "",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Liza",
-            "rol": [
+            "bio": "Hier wat tekst over Liza",
+            "functie": [
                 "acteur"
             ],
-            "speelt": "Barfée"
-        },
-        {
-            "id": 9,
-            "firstName": "Anne-Sophie",
-            "lastName": "",
-            "picture": "PICTURE_URL",
-            "text": "Hier wat tekst over Anne-Sophie",
-            "rol": [
-                "acteur"
-            ],
-            "speelt": "Mitch Mahoney"
+            "rol": "Wenda Barfée"
         }
     ]
 }

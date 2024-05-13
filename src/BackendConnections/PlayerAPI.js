@@ -1,8 +1,9 @@
 const URL = 'https://localhost:32788'
-
+import crew from '../Crew.json'
 
 function GetPlayers() {
-    return fetch(`${URL}/player`, {}).then((response) => { return response.json(); })
+    return crew.crew
+    // return fetch(`${URL}/player`, {}).then((response) => { return response.json(); })
 }
 
 function GetPlayerById(id) {
