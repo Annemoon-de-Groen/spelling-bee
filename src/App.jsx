@@ -3,7 +3,7 @@ import Info from './Pages/Info'
 import Spelers from './Pages/Spelers/Spelers'
 import Spellen from './Pages/Spel/Spellen'
 import Top from './Top'
-import { HashRouter, Link, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './stylesheets/App.css'
 import Datumprikker from './Pages/Tickets/Datumprikker'
 import Tickets from './Pages/Tickets/Tickets'
@@ -17,6 +17,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false)
   return (
     <>
+    <h1>App is loaded</h1>
       <AdminContext.Provider value={{
         isAdmin,
         setIsAdmin
