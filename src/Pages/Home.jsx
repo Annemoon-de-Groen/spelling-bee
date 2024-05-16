@@ -9,7 +9,7 @@ function Home() {
   const [allData, setAllData] = useState([]);
 
   useEffect(() => {
-    GetPlay().then((response) => setAllData(response))
+    setAllData(GetPlay());
   }, [])
   const handleBuyTicket = (event) => {
     localStorage.removeItem('datum')
@@ -41,7 +41,7 @@ function Home() {
         <p> Speelt op</p>
         {allData.map((datum) => {
           return (
-            <p>{FormatDate(datum.date)}</p>
+            <p>{FormatDate(datum)}</p>
           )
         })}
       </div>

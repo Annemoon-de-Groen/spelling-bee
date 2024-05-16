@@ -17,7 +17,6 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false)
   return (
     <>
-    <h1>App is loaded</h1>
       <AdminContext.Provider value={{
         isAdmin,
         setIsAdmin
