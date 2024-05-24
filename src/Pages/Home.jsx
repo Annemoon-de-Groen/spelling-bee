@@ -27,9 +27,11 @@ Dus koop gauw je kaarten!!</p>
         <a href='https://www.ticketkantoor.nl/shop/spelwedstrijd'><button>Koop kaartjes</button></a>
         <p>Deze musical is volledig gemaakt door jongeren, dit houdt in dat het vertaald, gespeeld en opgevoerd is door ons zelf! We zouden dit stuk heel graag opvoeren, maar daar is alleen wat financiering voor nodig. Er moet namelijk een zaal gehuurd worden, apparatuur gehuurd worden, decor en kostuums moeten gemaakt worden en nog meer. We zouden het daarom heel fijn vinden als jullie iets zouden kunnen bijdragen aan deze voorstelling! </p>
         <a href='https://diensten.asnbank.nl/online/betaalverzoek/#/v2/6f4df135-7a68-4d2b-985f-04da3277e6b7/OQClrtpPPQSTkzp3XaQapi6mdMXSqkrj'><button>Doneer</button></a>
-
       </div>
-      <div>
+
+
+
+
       <div>
         <img id='frontPageImage' src="https://github.com/Annemoon-de-Groen/the-25th-annual-putnam-county-spelling-bee/blob/main/src/assets/images/Poster.jpeg?raw=true"></img>
       </div>
@@ -53,7 +55,6 @@ Dus koop gauw je kaarten!!</p>
             <p>{FormatDate(datum)}</p>
           )
         })}
-      </div>
       </div>
 
 

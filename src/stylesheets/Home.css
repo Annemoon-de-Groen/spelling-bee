@@ -32,8 +32,9 @@
 }
 
 #frontPageImage {
-    width: 35vw;
+    width: 28vw;
     padding: 25px;
+    height: 50vh;
 }
 
 #mapsLocation {
