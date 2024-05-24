@@ -1,3 +1,6 @@
+/*Layout homescreen laptop*/
+
+@media screen and (min-width:600px){
 .homePage {
     background-image: url("https://www.clearspacetheatre.org/wp-content/uploads/2021/01/SPELLINGBEE_logo_300dpi.jpg");
     background-size: 1000px 500px;
@@ -6,9 +9,10 @@
     padding: 5px;
     margin: 0px auto;
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 350px;
+    grid-template-columns: 37vw 37vw;
 }
+
+
 
 .homePage h1 {}
 
@@ -19,13 +23,16 @@
     background: lightgreen;
     width: 200px;
     height: 80px;
-    display: inline-block;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+
 }
 
 #frontPageImage {
-    width: 450px;
+    width: 35vw;
     padding: 25px;
 }
 
@@ -45,5 +52,81 @@
     width: 25px;
     position: relative;
     top: 10px;
+
+}
+.text {
+    margin: 10px;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.text p{
+          text-align: justify;
+}
+
+}
+
+
+/*Layout homescreen phone*/
+@media screen and (max-width:600px){
+.homePage {
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    margin: 0px auto;
+}
+
+
+.homePage h1 {}
+
+
+
+.homePage button {
+    color: black;
+    background: lightgreen;
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 10px;
+}
+
+.text {
+    margin: 10px;
+     width: 85vw;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.text p{
+          text-align: justify;
+}
+
+#frontPageImage {
+    width: 85vw;
+    padding: 25px;
+}
+
+
+
+#mapsLocation {
+    background-color: lightblue;
+    text-emphasis: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+#mapsBorder {}
+
+#mapsLogo {
+    width: 25px;
+    position: relative;
+    top: 10px;
+
+}
 
 }

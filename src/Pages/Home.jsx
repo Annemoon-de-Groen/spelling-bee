@@ -20,13 +20,20 @@ function Home() {
   return (
     <div className='Page homePage'>
       <div className='text'>
-        <p>De 25 Annual Putnam County Spelling Bee is een musical over een spelwedstrijd waar verschillende kinderen aan meedoen.
-          Het is een humoristische voorstelling die nu vertaald is naar het nederlands en deze zomer zal worden opgevoerd in de CultuurCampus.</p>
-        <a href='https://www.ticketkantoor.nl/shop/spelwedstrijd'><button>Koop kaartje</button></a>
+        <p>De 25e jaarlijkse Putnam County spelwedstrijd is een musical over een -je raad het al- spelwedstrijd! 6 kinderen gaan de strijd aan voor de spel-beker. Losse verhalen escaleren gedurende de wedstrijd en er blijft altijd de vraag; wie zal er winnen?
+
+Al een aantal maanden zijn we met een groep jongeren bezig om dit stuk op de planken te zetten. (wil je weten wie, neem dan een kijkje bij “Spelers”) en we zouden het super leuk vinden als jij komt kijken! 
+Dus koop gauw je kaarten!!</p>
+        <a href='https://www.ticketkantoor.nl/shop/spelwedstrijd'><button>Koop kaartjes</button></a>
+        <p>Deze musical is volledig gemaakt door jongeren, dit houdt in dat het vertaald, gespeeld en opgevoerd is door ons zelf! We zouden dit stuk heel graag opvoeren, maar daar is alleen wat financiering voor nodig. Er moet namelijk een zaal gehuurd worden, apparatuur gehuurd worden, decor en kostuums moeten gemaakt worden en nog meer. We zouden het daarom heel fijn vinden als jullie iets zouden kunnen bijdragen aan deze voorstelling! </p>
+        <a href='https://diensten.asnbank.nl/online/betaalverzoek/#/v2/6f4df135-7a68-4d2b-985f-04da3277e6b7/OQClrtpPPQSTkzp3XaQapi6mdMXSqkrj'><button>Doneer</button></a>
+
       </div>
       <div>
-        <img id='frontPageImage' src="https://media.blogto.com/events/2015/05/28/764977f9-b816-45aa-905b-e1c0e5a5301b.jpg?w=2048&cmd=resize&quality=70"></img>
+      <div>
+        <img id='frontPageImage' src="https://github.com/Annemoon-de-Groen/the-25th-annual-putnam-county-spelling-bee/blob/main/src/assets/images/Poster.jpeg"></img>
       </div>
+      
       <div>
         <p>Cultuurcampus Vleuten
         </p>
@@ -37,6 +44,8 @@ function Home() {
           </a>
         </div>
       </div>
+
+      
       <div>
         <p> Speelt op</p>
         {allData.map((datum) => {
@@ -44,6 +53,7 @@ function Home() {
             <p>{FormatDate(datum)}</p>
           )
         })}
+      </div>
       </div>
 
 

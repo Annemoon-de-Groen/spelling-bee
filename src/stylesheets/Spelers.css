@@ -1,7 +1,9 @@
-.spelersPage {
+@media screen and (min-width:600px){
+    .spelersPage {
     display: grid;
     grid-template-columns: auto auto auto
 }
+
 
 .spelerPicture {
     width: 150px;
@@ -38,12 +40,75 @@ h2 {
 
 .spelerPopup {
     position: fixed;
-    border: #115DAB 1px solid;
+    border: #115DAB 5px solid;
     left: calc(50vw - 250px);
     z-index: 1;
     background: white;
     margin: 0px auto;
     width: 500px;
     text-align: center;
+}
 
+.popupTitle{
+    border-bottom:#115DAB 3px solid;
+    position: relative;
+    top: -8px;
+    padding-bottom: 5px;
+}
+}
+
+@media screen and (max-width:600px){
+
+
+
+.spelerPicture {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.Speler {
+    background: #FDFDFD;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px -50px;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: small;
+    font-weight: 300
+}
+
+.Speler ul {
+    list-style-type: none;
+}
+
+.spelerName {
+    font-size: 20px;
+}
+.popupTitle{
+    border-bottom:#115DAB 3px solid;
+    position: relative;
+    top: -8px;
+    padding-bottom: 5px;
+}
+
+.spelerPopup {
+    position: fixed;
+    border: #115DAB 5px solid;
+    left: calc(50vw - 40vw);
+    z-index: 1;
+    background: white;
+    margin: 0px auto;
+    width: 80vw;
+    text-align:center;
+
+}
 }

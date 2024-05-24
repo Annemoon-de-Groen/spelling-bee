@@ -16,11 +16,11 @@
             "id": 2,
             "firstName": "Neomi",
             "lastName": "Bes",
-            "bio": "Hier wat tekst over Neomi",
+            "bio": "Neomi is 22 jaar en is gek op theater! Ze zit op Roc midden Nederland creatieve college en volgt daar de theater opleiding. Verder zit ze ook al 4 jaar bij bij Sesar toneel waar zij recentelijk nog een voorstelling voor heeft  geschreven en daar zelf ook in heeft gespeeld. Musical daarin tegen is een totaal nieuw iets voor haar.",
             "functie": [
                 "acteur"
             ],
-            "rol": "Panch"
+            "rol": "Doris Panch"
         },
         {
             "id": 9,
@@ -31,7 +31,7 @@
                 "acteur",
                 "choreograaf"
             ],
-            "speelt": "Midge Mahoney"
+            "rol": "Midge Mahoney"
         },
         {
             "id": 3,
@@ -56,7 +56,7 @@
         {
             "id": 5,
             "firstName": "Lara",
-            "lastName": "",
+            "lastName": "Keijzer",
             "bio": "Lara danst al sinds ze drie jaar oud is en zit nu in haar derde jaar musical les. Ze wilt dan ook heel graag een theater opleiding doen, want er is niets wat zij liever doet dan op het podium staan!",
             "functie": [
                 "acteur"
@@ -87,7 +87,7 @@
         {
             "id": 8,
             "firstName": "Liza",
-            "lastName": "",
+            "lastName": "van Rijn",
             "bio": "Liza heeft altijd al een passie voor het theater gehad. Ze heeft lang gedanst en gezongen en is een paar jaar geleden de musicalwereld ingerold. Momenteel zit ze in de Talentclass van Fanwork musicals, waar ze de afgelopen jaren al te zien was in onder andere The Addams Family en Spring Awakening. Haar liefde voor musicals en taal komen samen in deze voorstelling, waarin ze Wendla Barfée met veel plezier speelt. ",
             "functie": [
                 "acteur"

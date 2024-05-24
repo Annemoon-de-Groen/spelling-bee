@@ -14,7 +14,7 @@ function Spelers() {
     <>
       {selectedSpeler &&
         <div className='spelerPopup'>
-          <h3>{selectedSpeler.firstName} {selectedSpeler.lastName}</h3>
+          <h3 className='popupTitle'>{selectedSpeler.firstName} {selectedSpeler.lastName}</h3>
           <p>{selectedSpeler.bio}</p>
           <button onClick={() => setSelectedSpeler(null)}>OK</button>
         </div>}
