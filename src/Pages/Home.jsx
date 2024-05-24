@@ -31,7 +31,7 @@ Dus koop gauw je kaarten!!</p>
       </div>
       <div>
       <div>
-        <img id='frontPageImage' src="https://github.com/Annemoon-de-Groen/the-25th-annual-putnam-county-spelling-bee/blob/main/src/assets/images/Poster.jpeg"></img>
+        <img id='frontPageImage' src="https://github.com/Annemoon-de-Groen/the-25th-annual-putnam-county-spelling-bee/blob/main/src/assets/images/Poster.jpeg?raw=true"></img>
       </div>
       
       <div>
